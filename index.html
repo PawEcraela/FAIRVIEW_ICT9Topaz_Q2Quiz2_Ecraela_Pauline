@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Robotics Club</title>
+    <style>
+        body {
+            background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a1b8ee107345049.5fa4aeae05dc0.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 80px;
+        }
+
+        h1 {
+            color: white;
+            font-family: monospace;
+        }
+
+        label {
+            color: white;
+            font-family: monospace;
+        }
+
+        .form-group {
+            background-color: #0b1a33;
+            opacity: 0.7;
+            padding: 20px;
+            width: 950px;
+            margin: auto;
+            border-radius: 25px;
+        }
+
+        input,
+        select,
+        textarea {
+            border-radius: 20px;
+        }
+
+        .row {
+            margin-bottom: 15px;
+        }
+
+        .navbar {
+            z-index: 1050;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="roboticon.png" alt="Logo" width="50px" height="50px">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">Some of our works</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control" type="text" placeholder="Search...">
+                    <button class="btn btn-success" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <center>
+        <h1>Highschool Robotics Club Application</h1>
+    </center>
+
+    <form class="form-group">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-control" placeholder="Type here..." required>
+            </div>
+            <div class="col-md-6">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" class="form-control" placeholder="Type here..." required>
+            </div>
+            <div class="col-md-6">
+                <label for="age">Age:</label>
+                <input type="number" id="age" class="form-control" placeholder="Type here..." required>
+            </div>
+            <div class="col-md-6">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" class="form-control" placeholder="Type here..." required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label for="section">Section:</label><br>
+                <input type="radio" id="9-Emerald" name="section" value="9-Emerald">
+                <label for="9-Emerald">9-Emerald</label>
+                <input type="radio" id="9-Topaz" name="section" value="9-Topaz">
+                <label for="9-Topaz">9-Topaz</label>
+                <input type="radio" id="9-Ruby" name="section" value="9-Ruby">
+                <label for="9-Ruby">9-Ruby</label>
+                <input type="radio" id="9-Sapphire" name="section" value="9-Sapphire">
+                <label for="9-Sapphire">9-Sapphire</label>
+            </div>
+
+            <div class="col-md-6">
+                <label for="experience">Experience:</label><br>
+                <input type="radio" id="Beginner" name="experience" value="Beginner">
+                <label for="Beginner">Beginner</label>
+                <input type="radio" id="Intermediate" name="experience" value="Intermediate">
+                <label for="Intermediate">Intermediate</label>
+                <input type="radio" id="Advanced" name="experience" value="Advanced">
+                <label for="Advanced">Advanced</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label for="project">Preferred Robotics Project:</label>
+                <select id="project" class="form-control" required>
+                    <option value="Select">Select a project</option>
+                    <option value="Line">Line following robot</option>
+                    <option value="Aquatic">Aquatic robot</option>
+                    <option value="Disaster">Disaster response robot</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label for="feedback">Why do you want to join?</label><br>
+                <textarea id="feedback" class="form-control" rows="4" placeholder="Type your answer here..." required></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <input type="submit" id="submit" name="submit" class="btn btn-primary" value="Submit">
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
